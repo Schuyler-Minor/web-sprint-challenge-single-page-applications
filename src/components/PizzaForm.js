@@ -29,7 +29,8 @@ function PizzaForm (props) {
                    </select>
                </label>
 
-               <div className="toppings">Toppings
+               <div className="toppings">
+                   <h2>Toppings</h2>
                <label>Pepporoni
                    <input 
                     type="checkbox"
@@ -54,6 +55,16 @@ function PizzaForm (props) {
 
                </label>
                </div>
+               <div id="special-text">
+                   <label>
+                       <h3>Special Instructions</h3>
+                       <input 
+                       type="text"
+                       />
+                   </label>
+
+               </div>
+               <button>Submit</button>
               
 
             </form>
