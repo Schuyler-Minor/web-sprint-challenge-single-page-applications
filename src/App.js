@@ -2,9 +2,10 @@ import React, { useState, useEffect } from "react";
 import { Link, Route, Switch } from "react-router-dom";
 import Home from "./components/Home";
 import PizzaForm from "./components/PizzaForm";
-import schema from './validation/formSchema';
+
 import * as yup from 'yup';
 import axios from "axios";
+import schema from './validation/formSchema';
 
 const initialFormValues = {
   // text inputs
@@ -56,7 +57,7 @@ const App = () => {
   // const validate = (name, value) => {
   //   yup.reach(schema, name)
   //   .validate(value)
-  //   .then(() => setFormErrors({ ...formErrors, [name]: ''}))
+  //   .then(() => setFormErrors({ ...formErrors, [name]: '' }))
   //   .catch(err => setFormErrors({ ...formErrors, [name]: err.errors[0]}))
   // }
 

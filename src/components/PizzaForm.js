@@ -19,7 +19,7 @@ function PizzaForm(props) {
         <div>
             <h1>Do You Like Pizza?</h1>
             <h2>Order here dummy</h2>
-            <form id="pizza-form">
+            <form id="pizza-form" onSubmit={onSubmit}>
 
                 <label>Name&nbsp;
                 <input 
